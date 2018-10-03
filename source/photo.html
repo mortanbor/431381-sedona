@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="page-header main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+          <ul class="main-nav__list site">
+            <li class="site__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site__item site__item--active">
               <a>Фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -23,94 +23,115 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
           </a>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <header class="caption">
-        <img class="caption__image" src="http://placehold.it/150x100" width="768" height="389" alt="Добро пожаловать в Седону">
-        <h1 class="caption__title">Фото и видео</h1>
-        <p class="caption__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <header class="page-main__heading heading">
+        <div class="heading__index">
+          <img class="heading__image" src="http://placehold.it/150x100" width="768" height="389" alt="Добро пожаловать в Седону">
+        </div>
+        <div class="heading__block">
+          <h1 class="heading__title">Фото и видео</h1>
+          <p class="heading__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </header>
-      <section class="photo">
+      <section class="page-main__photo photo">
+        <h2 class="visually-hidden">Фотографии природы города Седона</h2>
         <div class="photo__wrapper">
-          <h2 class="visually-hidden">Фотографии природы города Седона</h2>
           <ul class="photo__list">
             <li class="photo__item">
               <a class="photo_link" href="#">
                 <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
               </a>
-              <p class="photo__signature">Неродные просторы</p>
-              <p class="photo__author">Автор фото: Борис</p>
-              <p class="photo__numders">
-                <span class="photo__likes">Знак "Класс"</span>1350
-              </p>
+              <div class="photo__item sign">
+                <p class="sign__title">Неродные просторы</p>
+                <p class="sign__author">Автор фото: Борис</p>
+                <button class="sign__button" type="button">Like</button>
+                <p class="sign__numbers">1350</p>
+              </div>
             </li>
             <li class="photo__item">
               <a class="photo_link" href="#">
                 <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
               </a>
-              <p class="photo__signature">Местная растительность</p>
-              <p class="photo__author">Автор фото: Сергей</p>
-              <p class="photo__numders">
-                <span class="photo__likes">Знак "Класс"</span>143
-              </p>
+              <div class="photo__item sign">
+                <p class="sign__title">Местная растительность</p>
+                <p class="sign__author">Автор фото: Сергей</p>
+                <button class="sign__button" type="button">Like</button>
+                <p class="sign__numbers">143</p>
+              </div>
             </li>
             <li class="photo__item">
               <a class="photo_link" href="#">
                 <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
               </a>
-              <p class="photo__signature">Дорога на север</p>
-              <p class="photo__author">Автор фото: Петр</p>
-              <p class="photo__numders">
-                <span class="photo__likes">Знак "Класс"</span>96
-              </p>
+              <div class="photo__item sign">
+                <p class="sign__title">Дорога на север</p>
+                <p class="sign__author">Автор фото: Петр</p>
+                <button class="sign__button" type="button">Like</button>
+                <p class="sign__numbers">96</p>
+              </div>
             </li>
             <li class="photo__item">
               <a class="photo_link" href="#">
                 <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
               </a>
-              <p class="photo__signature">Мост дьявола</p>
-              <p class="photo__author">Автор фото: Антон</p>
-              <p class="photo__numders">
-                <span class="photo__likes">Знак "Класс"</span>254
-              </p>
+              <div class="photo__item sign">
+                <p class="sign__title">Мост дьявола</p>
+                <p class="sign__author">Автор фото: Антон</p>
+                <button class="sign__button" type="button">Like</button>
+                <p class="sign__numbers">254</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="video">
+      <section class="page-main__video video">
         <h2 class="visually-hidden">Видео-обзор</h2>
-        <div class="video__wrapper">
-          <h3 class="video__title">Все еще сомневаетесь?</h3>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video class="video__file" width="321" height="201" preload="auto" src="video.mp4" poster="http://placehold.it/321x201" controls></video>
+        <div class="video__text">
+          <p class="video__question">Все еще сомневаетесь?</p>
+          <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__player player">
+          <div class="player__image">
+            <img class="player__photo" src="http://placehold.it/321x201" width="301" height="201" alt="Фото дороги в Седону">
+          </div>
+          <div class="player__controls controls">
+            <div class="controls__rewind">
+              <div class="controls__scale"></div>
+              <div class="controls__toggle"></div>
+            </div>
+            <div class="controls__console console">
+              <div class="console__item console__item--repeat"></div>
+              <div class="console__item console__item--subtitles"></div>
+              <div class="console__item console__item--screen"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <b class="social__title">#visitsedona</b>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru">Мы в Твиттер</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютюб</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <b class="page-footer__hashtag">#visitsedona</b>
+        <ul class="page-footer social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru">Мы в Твиттер</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютюб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
