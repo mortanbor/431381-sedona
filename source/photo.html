@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site">
@@ -42,49 +42,57 @@
       <section class="page-main__photo photo">
         <h2 class="visually-hidden">Фотографии природы города Седона</h2>
         <div class="photo__wrapper">
-          <ul class="photo__list">
-            <li class="photo__item">
-              <a class="photo_link" href="#">
-                <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
+          <ul class="photo__list list-block">
+            <li class="list-block__item">
+              <a class="list-block__link" href="#">
+                <img class="list-block__image" src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
               </a>
-              <div class="photo__item sign">
-                <p class="sign__title">Неродные просторы</p>
-                <p class="sign__author">Автор фото: Борис</p>
-                <button class="sign__button" type="button">Like</button>
-                <p class="sign__numbers">1350</p>
+              <div class="list-block__sign">
+                <p class="list-block__title">Неродные просторы</p>
+                <p class="list-block__author">Автор фото: Борис</p>
+                <div class="list-block__count">
+                  <button class="list-block__button" type="button">Like</button>
+                  <p class="list-block__numbers">1350</p>
+                </div>
               </div>
             </li>
-            <li class="photo__item">
-              <a class="photo_link" href="#">
-                <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
+            <li class="list-block__item">
+              <a class="list-block__link" href="#">
+                <img class="list-block__image" src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
               </a>
-              <div class="photo__item sign">
-                <p class="sign__title">Местная растительность</p>
-                <p class="sign__author">Автор фото: Сергей</p>
-                <button class="sign__button" type="button">Like</button>
-                <p class="sign__numbers">143</p>
+              <div class="list-block__sign">
+                <p class="list-block__title">Местная растительность</p>
+                <p class="list-block__author">Автор фото: Сергей</p>
+                <div class="list-block__count">
+                  <button class="list-block__button" type="button">Like</button>
+                  <p class="list-block__numbers">143</p>
+                </div>
               </div>
             </li>
-            <li class="photo__item">
-              <a class="photo_link" href="#">
-                <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
+            <li class="list-block__item">
+              <a class="list-block__link" href="#">
+                <img class="list-block__image" src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
               </a>
-              <div class="photo__item sign">
-                <p class="sign__title">Дорога на север</p>
-                <p class="sign__author">Автор фото: Петр</p>
-                <button class="sign__button" type="button">Like</button>
-                <p class="sign__numbers">96</p>
+              <div class="list-block__sign">
+                <p class="list-block__title">Дорога на север</p>
+                <p class="list-block__author">Автор фото: Петр</p>
+                <div class="list-block__count">
+                  <button class="list-block__button" type="button">Like</button>
+                  <p class="list-block__numbers">96</p>
+                </div>
               </div>
             </li>
-            <li class="photo__item">
-              <a class="photo_link" href="#">
-                <img class="photo__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
+            <li class="list-block__item">
+              <a class="list-block__link" href="#">
+                <img class="list-block__image" src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
               </a>
-              <div class="photo__item sign">
-                <p class="sign__title">Мост дьявола</p>
-                <p class="sign__author">Автор фото: Антон</p>
-                <button class="sign__button" type="button">Like</button>
-                <p class="sign__numbers">254</p>
+              <div class="list-block__sign">
+                <p class="list-block__title">Мост дьявола</p>
+                <p class="list-block__author">Автор фото: Антон</p>
+                <div class="list-block__count">
+                  <button class="list-block__button" type="button">Like</button>
+                  <p class="list-block__numbers">254</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -92,10 +100,8 @@
       </section>
       <section class="page-main__video video">
         <h2 class="visually-hidden">Видео-обзор</h2>
-        <div class="video__text">
-          <p class="video__question">Все еще сомневаетесь?</p>
-          <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
+        <p class="video__question">Все еще сомневаетесь?</p>
+        <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__player player">
           <div class="player__image">
             <img class="player__photo" src="http://placehold.it/321x201" width="301" height="201" alt="Фото дороги в Седону">
@@ -106,9 +112,9 @@
               <div class="controls__toggle"></div>
             </div>
             <div class="controls__console console">
-              <div class="console__item console__item--repeat"></div>
-              <div class="console__item console__item--subtitles"></div>
-              <div class="console__item console__item--screen"></div>
+              <button class="console__item console__item--repeat" type="button"></button>
+              <button class="console__item console__item--subtitles" type="button"></button>
+              <button class="console__item console__item--screen" type="button"></button>
             </div>
           </div>
         </div>
@@ -117,15 +123,15 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <b class="page-footer__hashtag">#visitsedona</b>
-        <ul class="page-footer social">
+        <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru">Мы в Твиттер</a>
+            <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">Мы на Ютюб</a>
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютюб"></a>
           </li>
         </ul>
       </div>
