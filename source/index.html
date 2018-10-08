@@ -8,24 +8,24 @@
   <body>
     <header class="page-header">
       <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site">
-            <li class="site__item site__item--active">
-              <a>Главная</a>
+            <li class="site__item">
+              <a class="site__link site__link--active">Главная</a>
             </li>
             <li class="site__item">
-              <a href="photo.html">Фото и видео</a>
+              <a class="site__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="site__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
           <a class="main-nav__logo">
-            <img class="main-nav__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
+            <img class="main-nav__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
           </a>
         </div>
       </nav>
@@ -33,24 +33,24 @@
     <main class="page-main">
       <header class="page-main__heading heading">
         <div class="heading__index">
-          <img class="heading__image heading__image--poster" src="http://placehold.it/150x100" width="768" height="389" alt="Добро пожаловать в Седону">
+          <img class="heading__image heading__image--poster" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Добро пожаловать в Седону">
         </div>
         <div class="heading__block">
           <h1 class="heading__title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="heading__description">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон</p>
+          <p class="heading__description">Рассмотрим 5 причин по которым Седона круче, чем Гранд Каньон!</p>
         </div>
       </header>
       <section class="page-main__advantages advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <div class="advantages__card card">
+            <div class="advantages__card card card--town">
               <h3 class="card__title">Настоящий городок</h3>
               <p class="card__number">— №1 —</p>
               <p class="card__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__card photo-image">
-              <img class="photo-image__image" src="http://placehold.it/520x260" width="520" height="260" alt="Фото города Седона">
+              <img class="photo-image__image" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="Фото города Седона">
             </div>
             <ul class="advantages__item conveniences">
               <li class="conveniences__item conveniences__item--home">
@@ -68,13 +68,13 @@
             </ul>
           </li>
           <li class="advantages__item">
-            <div class="advantages__card card">
+            <div class="advantages__card card card--town">
               <h3 class="card__title">Там есть Мост дьявола</h3>
               <p class="card__number">— №2 —</p>
               <p class="card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__card photo-image">
-              <img class="photo-image__image" src="http://placehold.it/520x260" width="520" height="260" alt="Фото мост Дьявола">
+              <img class="photo-image__image" src="img/photo-bridge-mobile@1x.jpg" width="520" height="260" alt="Фото мост Дьявола">
             </div>
           </li>
           <li class="advantages__item">
@@ -87,15 +87,15 @@
           <li class="advantages__item">
             <div class="advantages__card card">
               <h3 class="card__title">Красивая дорога</h3>
-              <p class="advantages__numder">— №4 —</p>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
+              <p class="card__number">— №4 —</p>
+              <p class="card__description">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item">
             <div class="advantages__card card">
               <h3 class="card__title">Мало туристов</h3>
-              <p class="advantages__number">— №5 —</p>
-              <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="card__number">— №5 —</p>
+              <p class="card__description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
         </ul>
@@ -109,7 +109,7 @@
       <section class="page-main__map map">
         <h2 class="visually-hidden">Карта</h2>
         <p class="map__wrapper">
-          <img class="map__image" src="http://placehold.it/320x350" width="320" height="350" alt="Карта">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
         </p>
       </section>
     </main>
@@ -130,7 +130,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
   </body>
