@@ -1,18 +1,33 @@
 .social {
   display: flex;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
 
-  list-style: none;
+  width: 150px;
 }
 
 .social__item {
   display: flex;
-
-  margin: 0 auto;
-
-  width: 48px;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
   height: 48px;
 
   background-color: @blue;
+}
+
+.social__item path {
+  fill: @white;
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: @hover;
+}
+
+.social__item:active {
+  background-color: @down;
+}
+
+.social__item:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }

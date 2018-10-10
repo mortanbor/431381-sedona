@@ -1,15 +1,11 @@
 .hotel {
-  width: 320px;
-  margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 }
 
 .hotel_guestion,
 .hotel__description,
 .hotel__find {
-  margin: 0;
-  padding: 0;
+  .defolt-style();
 }
 
 .hotel_guestion {
@@ -19,7 +15,19 @@
 }
 
 .hotel__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 4400;
+  .form-font();
+}
+
+.hotel__find {
+  padding: 17px 46px;
+}
+
+.hotel__find:hover,
+.hotel__find:focus {
+  background-color: @hover;
+}
+
+.hotel__find:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: @down;
 }
