@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  width: 150px;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: @blue;
+}
+
+.social__item path {
+  fill: @white;
+}
+
+.social__item:hover,
+.social__item:focus {
+  background-color: @hover;
+}
+
+.social__item:active {
+  background-color: @down;
+}
+
+.social__item:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}

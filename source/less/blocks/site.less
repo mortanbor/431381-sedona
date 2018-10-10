@@ -1,0 +1,23 @@
+.site__item {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site__link {
+  display: flex;
+  justify-content: center;
+  color: @white;
+  box-shadow: @shadow-item, @shadow-inset;
+}
+
+.site__link[href]:hover,
+.site__link[href]:focus {
+  background-color: @hover;
+}
+
+.site__link[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: @down;
+}
