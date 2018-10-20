@@ -1,4 +1,8 @@
-.card {
+.card__list {
+  width: 270px;
+
+  padding: 25px 25px 30px 25px;
+  text-align: center;
   background-color: @grey;
 }
 
@@ -12,24 +16,30 @@
 }
 
 .card__title {
-  padding-bottom: 7px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
+  margin-bottom: 8px;
+  .title-font();
+}
+
+.card__number {
+  margin-bottom: 16px;
 }
 
 .card__number,
 .card__description {
-  padding-bottom: 15px;
-
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
 
-.card--town {
-  padding-bottom: 40px;
+.card__list--town {
+  padding: 40px 25px;
 
-  background-color: @blue;
   color: @white;
+  background-color: @blue;
+}
+
+.card__photo {
+  height: 260px;
+
+  overflow: hidden;
 }

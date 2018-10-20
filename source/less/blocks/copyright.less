@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 130px;
   margin: 0 auto;
 }
@@ -14,7 +15,10 @@
 }
 
 .copyright__text {
+  display: flex;
+
   font-size: 14px;
+  line-height: 26px;
   font-weight: 400;
 }
 
@@ -23,8 +27,12 @@
 
   width: 27px;
   height: 34px;
+}
 
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.copyright__link:hover path {
+  fill: rgb(129, 179, 210);
+}
+
+.copyright__link:active path {
+  fill: rgba(0, 0, 0, 0.3);
 }
