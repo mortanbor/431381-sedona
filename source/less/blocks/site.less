@@ -22,3 +22,48 @@
   color: rgba(255, 255, 255, 0.3);
   background-color: @down;
 }
+
+@media (min-width: @tablet-width) {
+  .site {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 49px;
+    padding-bottom: 0;
+    padding-right: 26px;
+  }
+
+  .site__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 232px;
+  }
+
+  .site__wrapper--end {
+    width: 253px;
+  }
+
+  .site__link {
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: @black;
+
+    box-shadow: none;
+  }
+
+  .site__link[href]:hover,
+  .site__link[href]:focus {
+    background-color: @white;
+  }
+
+  .site__link[href]:active {
+    color: @black;
+    background-color: @white;
+  }
+}

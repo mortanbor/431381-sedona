@@ -12,7 +12,6 @@
   margin-bottom: 29px;
 }
 
-
 .conveniences__title,
 .conveniences__description {
   .defolt-style();
@@ -36,4 +35,55 @@
 
 .conveniences__item--food {
   margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .conveniences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 700px;
+
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .conveniences__item {
+    width: 170px;
+
+    padding-top: 155px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .conveniences__title {
+    margin-bottom: 25px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  .conveniences__description {
+    width: 170px;
+
+    text-align: center;
+  }
+
+  .conveniences__item--home {
+    order: 1;
+  }
+
+  .conveniences__item--food {
+    order: 2;
+  }
+
+  .conveniences__item--gifts {
+    order: 3;
+  }
+
 }

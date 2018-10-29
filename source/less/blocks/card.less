@@ -1,4 +1,5 @@
 .card__list {
+  box-sizing: border-box;
   padding-top: 27px;
   padding-bottom: 28px;
 
@@ -48,4 +49,61 @@
   height: 260px;
 
   overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .card__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card__list {
+    width: 256px;
+
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+
+  .card__list--town {
+    width: 256px;
+
+    padding-top: 47px;
+    padding-bottom: 38px;
+  }
+
+  .card__title {
+    width: 155px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .card__number,
+  .card__description {
+    width: 170px;
+    margin: auto;
+  }
+
+  .card__description--road {
+    width: 150px;
+  }
+
+  .card__number {
+    margin-bottom: 20px;
+  }
+
+  .card__photo {
+    width: 512px;
+    height: none;
+
+    overflow: none;
+  }
+
+  .card__list--bridge {
+    order: 2;
+  }
+
 }

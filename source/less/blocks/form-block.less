@@ -172,3 +172,89 @@
   background-color: @white;
   box-shadow: 0 0 0 4px rgb(229, 229, 229) inset;
 }
+
+@media (min-width: @tablet-width) {
+  .form-block--radio {
+    width: 324px;
+
+    padding: 0;
+    margin-bottom: 50px;
+
+    order: -1;
+  }
+
+  .form-block__title {
+    margin-bottom: 55px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .form-block__item--radio {
+    padding-left: 75px;
+    padding-top: 14px;
+    padding-bottom: 38px;
+    margin-bottom: 0;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .form-block--introduce {
+    width: 324px;
+
+    padding: 0 0 0 57px;
+    margin-bottom: 50px;
+  }
+
+  .form-block__title--introduce,
+  .form-block__title--radio {
+    text-align: left;
+  }
+
+  .form-block--contacts {
+    width: 648px;
+
+    padding: 0;
+  }
+
+  .form-block__title--contacts {
+    margin-bottom: 23px;
+  }
+
+  .form-block__item--contacts {
+    margin-bottom: 22px;
+  }
+
+  .form-block__list > .form-block__item--contacts:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .form-block--check {
+    display: flex;
+
+    width: 768px;
+    padding: 50px 20px 40px 20px;
+  }
+
+  .form-block__list--check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 465px;
+
+    margin-left: 30px;
+  }
+
+  .form-block__title--check {
+    width: 290px;
+
+    text-align: center;
+
+    margin: auto;
+    margin-bottom: 37px;
+  }
+}

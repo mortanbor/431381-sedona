@@ -1,6 +1,9 @@
 .page-header {
   position: relative;
 
+  padding-top: 17px;
+  padding-bottom: 18px;
+
   background-color: @white;
 }
 
@@ -14,10 +17,11 @@
 .page-header__toggle {
   display: flex;
 
-  padding-top: 17px;
-  padding-left: 277px;
-  padding-bottom: 18px;
-  padding-right: 20px;
+  width: 23px;
+  height: 21px;
+
+  padding: 0;
+  margin-left: 277px;
 
   background-color: transparent;
 
@@ -36,4 +40,22 @@
   margin: 0 auto;
 
   z-index: 200;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 333px;
+  }
 }

@@ -22,3 +22,24 @@
 .page-footer__social {
   .defolt-style();
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    width: 648px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 400px;
+  }
+}

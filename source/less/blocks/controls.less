@@ -41,3 +41,48 @@
   border: 4px solid #dfdfdf;
   border-radius: 50%;
 }
+
+@media (min-width: @tablet-width) {
+  .controls {
+    display: flex;
+    flex-direction: column;
+
+    width: 648px;
+    height: 93px;
+    margin: -93px auto 0 auto;
+  }
+
+  .controls__rewind {
+    position: relative;
+    display: flex;
+
+    width: 648px;
+    height: 93px;
+
+    background-color: @black;
+    opacity: 0.6;
+    z-index: 200;
+  }
+
+  .controls__scale {
+    position: absolute;
+
+    top: 40px;
+    left: 93px;
+
+    width: 389px;
+    height: 3px;
+
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .controls__toggle {
+    position: absolute;
+
+    top: 42px;
+    left: 206px;
+
+    border: 4px solid #dfdfdf;
+    border-radius: 50%;
+  }
+}
