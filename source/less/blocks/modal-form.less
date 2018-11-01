@@ -40,7 +40,7 @@
 }
 
 .modal-form__button {
-  .defolt-style();
+  .default-style();
 
   padding: 18px 65px;
   text-align: center;
@@ -56,4 +56,61 @@
 .modal-form__item--send {
   margin: auto;
   margin-bottom: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-form {
+    display: none;
+    width: 640px;
+    margin: auto;
+  }
+
+  .modal-form--mistake {
+    box-sizing: border-box;
+    width: 400px;
+
+    margin: auto;
+    padding: 40px 61px 35px 57px;
+  }
+
+  .modal-form__title {
+    width: 345px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .modal-form__title--mistake {
+    width: 220px;
+
+    line-height: 40px;
+  }
+
+  .modal-form__item {
+    width: 285px;
+    margin-bottom: 39px;
+  }
+
+  .modal-form__button {
+    width: 458px;
+
+    margin: auto;
+  }
+
+  .modal-form__button--mistake {
+    width: 272px;
+
+    margin: auto;
+  }
+
+  .modal-form__item--send {
+    width: 420px;
+
+    margin: auto;
+    margin-bottom: 37px;
+  }
 }

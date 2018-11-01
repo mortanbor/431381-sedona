@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,22 +12,18 @@
         <nav class="page-header__nav main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
           <ul class="main-nav__list site">
-            <div class="site__wrapper">
-              <li class="site__item">
-                <a class="site__link site__link--active">Главная</a>
-              </li>
-              <li class="site__item">
-                <a class="site__link" href="photo.html">Фото и видео</a>
-              </li>
-            </div>
-            <div class="site__wrapper site__wrapper--end">
-              <li class="site__item">
-                <a class="site__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="site__item">
-                <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-              </li>
-          </div>
+            <li class="site__item">
+              <a class="site__link site__link--active">Главная</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
           </ul>
         </nav>
         <button class="page-header__toggle" type="button" aria-label="Открыть меню">
@@ -56,15 +53,13 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item card">
-              <div class="card__wrapper">
-                <div class="card__list card__list--town">
-                  <h3 class="card__title">Настоящий городок</h3>
-                  <p class="card__number">— №1 —</p>
-                  <p class="card__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
-                </div>
-                <div class="card__photo">
-                  <img class="card__photo-image" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="Фото города Седона">
-                </div>
+              <div class="card__list card__list--town">
+                <h3 class="card__title">Настоящий городок</h3>
+                <p class="card__number">— №1 —</p>
+                <p class="card__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="card__photo">
+                <img class="card__photo-image" src="img/main-city-mobile@1x.jpg" width="520" height="260" alt="Фото города Седона">
               </div>
               <ul class="card__item conveniences">
                 <li class="conveniences__item conveniences__item--home">
@@ -82,40 +77,36 @@
               </ul>
             </li>
             <li class="advantages__item card">
-              <div class="card__wrapper">
-                <div class="card__list card__list--town card__list--bridge">
-                  <h3 class="card__title">Там есть Мост дьявола</h3>
-                  <p class="card__number">— №2 —</p>
-                  <p class="card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-                </div>
-                <div class="card__photo">
-                  <img class="card__photo-image" src="img/main-bridge-mobile@1x.jpg" width="520" height="260" alt="Фото мост Дьявола">
-                </div>
+              <div class="card__list card__list--town card__list--bridge">
+                <h3 class="card__title">Там есть<br> Мост дьявола</h3>
+                <p class="card__number">— №2 —</p>
+                <p class="card__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="card__photo">
+                <img class="card__photo-image" src="img/main-bridge-mobile@1x.jpg" width="520" height="260" alt="Фото мост Дьявола">
               </div>
             </li>
-            <div class="advantages__wrapper">
-              <li class="advantages__item card">
-                <div class="card__list">
-                  <h3 class="card__title">Небольшая площадь</h3>
-                  <p class="card__number">— №3 —</p>
-                  <p class="card__description">Все интересные места находятся очень близко</p>
-                </div>
-              </li>
-              <li class="advantages__item card">
-                <div class="card__list">
-                  <h3 class="card__title">Красивая дорога</h3>
-                  <p class="card__number">— №4 —</p>
-                  <p class="card__description card__description--road">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
-                </div>
-              </li>
-              <li class="advantages__item card">
-                <div class="card__list">
-                  <h3 class="card__title">Мало туристов</h3>
-                  <p class="card__number">— №5 —</p>
-                  <p class="card__description">Большинство едет в Гранд Каньон и толпится там</p>
-                </div>
-              </li>
-            </div>
+            <li class="advantages__item card">
+              <div class="card__list">
+                <h3 class="card__title">Небольшая площадь</h3>
+                <p class="card__number">— №3 —</p>
+                <p class="card__description">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item card">
+              <div class="card__list">
+                <h3 class="card__title">Красивая дорога</h3>
+                <p class="card__number">— №4 —</p>
+                <p class="card__description card__description--road">Ехать в Седону из Лас-Вегаса  совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item card">
+              <div class="card__list">
+                <h3 class="card__title">Мало туристов</h3>
+                <p class="card__number">— №5 —</p>
+                <p class="card__description">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
           </ul>
         </section>
         <section class="page-main__hotel hotel">
@@ -132,9 +123,8 @@
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <b class="page-footer__hashtag">#visitsedona</b>
-          <ul class="page-footer__social social">
+        <b class="page-footer__hashtag">#visitsedona</b>
+        <ul class="page-footer__social social">
             <li class="social__item">
               <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер">
                 <svg version="1.0" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
@@ -161,7 +151,6 @@
               </a>
             </li>
           </ul>
-        </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">

@@ -6,8 +6,7 @@
 }
 
 .site__link {
-  display: flex;
-  justify-content: center;
+  display: block;
   padding: 8px 0;
   color: @white;
   box-shadow: @shadow-item, @shadow-inset;
@@ -33,22 +32,29 @@
     padding-top: 0;
     padding-left: 49px;
     padding-bottom: 0;
-    padding-right: 26px;
+    padding-right: 25px;
   }
 
-  .site__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 232px;
+  .site__item {
+    width: 20%;
+
+    text-align: left;
   }
 
-  .site__wrapper--end {
-    width: 253px;
+  .site__item:nth-child(3) {
+    margin-left: auto;
+
+    text-align: right;
+  }
+
+  .site__item:nth-child(4) {
+    text-align: right;
   }
 
   .site__link {
+    display: block;
     padding: 15px 0 15px 0;
+
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;

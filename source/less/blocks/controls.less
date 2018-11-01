@@ -11,7 +11,6 @@
 
 .controls__rewind {
   position: relative;
-  display: flex;
 
   width: 280px;
   height: 45px;
@@ -50,18 +49,16 @@
     width: 648px;
     height: 93px;
     margin: -93px auto 0 auto;
-  }
-
-  .controls__rewind {
-    position: relative;
-    display: flex;
-
-    width: 648px;
-    height: 93px;
 
     background-color: @black;
     opacity: 0.6;
-    z-index: 200;
+  }
+
+  .controls__rewind {
+    display: block;
+    position: relative;
+    width: 648px;
+    height: 45px;
   }
 
   .controls__scale {

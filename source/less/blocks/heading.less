@@ -1,23 +1,10 @@
-.heading {
-  padding-bottom: 31px;
-}
-
-.heading--indent {
-  padding-bottom: 21px;
-}
-
 .heading__title,
 .heading__description {
-  .defolt-style();
+  .default-style();
 }
 
 .heading__index {
-  margin-bottom: 36px;
   overflow: hidden;
-}
-
-.heading__index--poster {
-  margin-bottom: 40px;
 }
 
 .heading__image {
@@ -33,12 +20,21 @@
 .heading__block {
   width: 275px;
   margin: auto;
+  padding-top: 40px;
+  padding-bottom: 31px;
   box-sizing: border-box;
 }
 
 .heading__block--poster {
   width: 255px;
   margin: auto;
+  padding-top: 40px;
+  padding-bottom: 31px;
+}
+
+.heading__block--indent {
+  padding-top: 35px;
+  padding-bottom: 15px;
 }
 
 .heading__title {
@@ -46,6 +42,10 @@
 
   .title-font();
   text-align: center;
+}
+
+.heading__title--catpion {
+  margin-bottom: 25px;
 }
 
 .heading__description {
@@ -63,26 +63,29 @@
 @media (min-width: @tablet-width) {
   .heading {
     width: 768px;
-    padding-bottom: 50px;
   }
 
   .heading__index--poster {
-    margin-bottom: 48px;
     overflow: hidden;
   }
 
   .heading__block {
     width: 450px;
+
+    padding-top: 73px;
+    padding-bottom: 70px;
   }
 
   .heading__block--poster {
     width: 500px;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-sizing: border-box;
   }
 
-  .heading__index {
-    margin-bottom: 73px;
+  .heading__block--indent {
+    padding-bottom: 75px;
   }
 
   .heading__image {
@@ -108,7 +111,7 @@
     line-height: 26px;
     font-weight: 700;
 
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .heading__description {
@@ -117,6 +120,5 @@
 
   .heading__description--poster {
     width: 500px;
-
   }
 }

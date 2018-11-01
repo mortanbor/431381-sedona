@@ -62,15 +62,21 @@
 @media (min-width: @tablet-width) {
   .photo-block--header {
     width: 648px;
-    padding: 20px 60px 0 60px;
+    padding: 0;
+  }
+
+  .photo-block__title,
+  .photo-block__author {
+    margin: 0;
   }
 
   .photo-block__sign {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 13px 20px 15px 17px;
+    padding: 17px 20px 15px 17px;
 
     background-color: #f2f2f2;
   }
@@ -79,23 +85,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 18px 20px 10px 20px;
+    align-items: center;
   }
 
   .photo-block__description {
     width: 200px;
     text-align: left;
-  }
-
-  .photo__wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 648px;
-
-    margin: auto;
   }
 
   .photo-block--card {
@@ -112,5 +107,14 @@
   .photo-block__image--header {
     width: 648px;
     height: 400px;
+  }
+
+  .photo-block__count {
+    display: flex;
+    width: 65px;
+  }
+
+  .photo-block__button {
+    margin-right: 10px;
   }
 }
