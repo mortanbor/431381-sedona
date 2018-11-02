@@ -1,11 +1,14 @@
 .main-nav {
   position: relative;
+
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
-  left: 275px;
+  top: 14px;
+  left: 277px;
   width: 23px;
   height: 23px;
 
@@ -28,9 +31,22 @@
   list-style: none;
 }
 
-.main-nav__logo-image {
-  display: inline-block;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    position: static;
+    width: auto;
+    margin: 0;
+  }
 
-  width: 102px;
-  height: 83px;
+  .main-nav__list {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+
+    background-color: @white;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

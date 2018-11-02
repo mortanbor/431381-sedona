@@ -1,25 +1,38 @@
 .hotel {
-  padding: 0 20px;
+  padding-top: 27px;
+  padding-bottom: 48px;
 }
 
 .hotel_guestion,
 .hotel__description,
 .hotel__find {
-  .defolt-style();
+  .default-style();
 }
 
 .hotel_guestion {
+  width: 265px;
+  margin: 0 auto 19px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  text-align: center;
 }
 
 .hotel__description {
+  width: 265px;
+  margin: 0 auto 34px;
+
   .form-font();
+
+  text-align: center;
 }
 
 .hotel__find {
-  padding: 17px 46px;
+  width: 280px;
+  padding: 15px 0 18px 0;
+  margin: 0 auto;
 }
 
 .hotel__find:hover,
@@ -30,4 +43,33 @@
 .hotel__find:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: @down;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .hotel_guestion {
+    width: 460px;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .hotel__description {
+    width: 440px;
+
+    margin-bottom: 44px;
+  }
+
+  .hotel__find {
+    width: 458px;
+
+    padding: 14px 0 16px 0;
+  }
 }

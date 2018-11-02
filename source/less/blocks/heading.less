@@ -1,33 +1,146 @@
 .heading__title,
 .heading__description {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .default-style();
 }
 
 .heading__index {
   overflow: hidden;
 }
 
+.heading__image {
+  min-height: 158px;
+}
+
 .heading__image--poster {
+  min-height: 389px;
   max-width: none;
-  transform: translateX(-35%);
+  transform: translateX(-29%);
 }
 
 .heading__block {
-  padding: 0 20px;
+  width: 275px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 31px;
   box-sizing: border-box;
 }
 
+.heading__block--poster {
+  width: 255px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 31px;
+}
+
+.heading__block--indent {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
 .heading__title {
-  padding-right: 12px;
-  padding-left: 12px;
+  margin-bottom: 29px;
 
   .title-font();
   text-align: center;
 }
 
+.heading__title--catpion {
+  margin-bottom: 25px;
+}
+
 .heading__description {
-  .form-font();
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.heading__description--poster {
+  line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    width: 768px;
+  }
+
+  .heading__index--poster {
+    overflow: hidden;
+  }
+
+  .heading__block {
+    width: 450px;
+
+    padding-top: 73px;
+    padding-bottom: 70px;
+  }
+
+  .heading__block--poster {
+    width: 500px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  .heading__block--indent {
+    padding-bottom: 75px;
+  }
+
+  .heading__image {
+    height: 290px;
+  }
+
+  .heading__image--poster {
+    width: auto;
+    min-height: 520px;
+    transform: none;
+  }
+
+  .heading__title {
+    margin-bottom: 28px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .heading__title--catpion {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+
+    margin-bottom: 32px;
+  }
+
+  .heading__description {
+    width: 440px;
+  }
+
+  .heading__description--poster {
+    width: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .heading {
+    width: 1200px;
+  }
+
+  .heading__image {
+    width: 1200px;
+  }
+
+  .heading__image--poster {
+    width: 1200px;
+  }
+
+  .heading__index {
+    width: 1200px;
+  }
+
+  .heading__index--poster {
+    width: 1200px;
+  }
 }

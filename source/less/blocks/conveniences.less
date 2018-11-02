@@ -1,25 +1,100 @@
 .conveniences {
   margin: 0;
-  padding: 0 20px;
+  padding: 36px 0 40px 0;
 
   list-style: none;
 }
 
+.conveniences__item {
+  width: 210px;
+
+  padding-left: 70px;
+  margin-bottom: 29px;
+}
+
 .conveniences__title,
 .conveniences__description {
-  .defolt-style()
+  .default-style();
+
+  text-align: left;
 }
 
 .conveniences__title {
-  padding-left: 45px;
+  margin-bottom: 13px;
 
-  .title-font();
-  text-align: left;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .conveniences__description {
-  padding-left: 45px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
 
-  .form-font();
-  text-align: left;
+.conveniences__item--food {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .conveniences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 768px;
+
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .conveniences__item {
+    width: 33.33%;
+    box-sizing: border-box;
+
+    padding-top: 155px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .conveniences__title {
+    margin-bottom: 22px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  .conveniences__description {
+    width: 165px;
+
+    margin: auto;
+
+    text-align: center;
+  }
+
+  .conveniences__item--home {
+    order: 1;
+  }
+
+  .conveniences__item--food {
+    order: 2;
+  }
+
+  .conveniences__item--gifts {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .conveniences {
+    width: 1200px;
+  }
+
+  .conveniences__description {
+    width: 288px;
+  }
 }

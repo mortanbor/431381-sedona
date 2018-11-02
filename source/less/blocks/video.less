@@ -1,3 +1,8 @@
+.video {
+  padding-top: 34px;
+  margin-bottom: 37px;
+}
+
 .video__question,
 .video__offer {
   margin: 0;
@@ -5,9 +10,34 @@
 }
 
 .video__question {
+  margin-bottom: 25px;
+
   .title-font();
 }
 
 .video__offer {
+  margin-bottom: 37px;
   .form-font();
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-top: 65px;
+  }
+
+  .video__question {
+    margin: auto;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .video__offer {
+    width: 420px;
+
+    margin: auto;
+    margin-bottom: 74px;
+  }
 }
