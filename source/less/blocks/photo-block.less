@@ -118,3 +118,31 @@
     margin-right: 10px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .photo-block {
+    width: 1200px;
+    padding: 0;
+  }
+
+  .photo-block--card {
+    width: 400px;
+  }
+
+  .photo-block__image {
+    width: 1200px;
+  }
+
+  .photo-block__sign {
+    margin-top: -80px;
+    padding: 17px 20px 15px 17px;
+
+    background-color: @black;
+    opacity: 0.3;
+  }
+
+  .photo-block__description,
+  .photo-block__count {
+    color: @white;
+  }
+}

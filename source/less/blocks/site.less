@@ -73,3 +73,19 @@
     background-color: @white;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 85px;
+    padding-bottom: 0;
+    padding-right: 65px;
+  }
+
+  .site__item:nth-child(3) {
+    margin-left: 150px;
+  }
+}
