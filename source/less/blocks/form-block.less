@@ -283,9 +283,6 @@
     padding-left: 21px;
     padding-right: 10px;
     margin-bottom: 0;
-
-    background-color: #f2f2f2;
-    border: none;
   }
 }
 
@@ -314,11 +311,69 @@
     padding: 0;
   }
 
+  .form-block__title--contacts {
+    margin-bottom: 65px;
+  }
+
+  .form-block__list--contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .form-block__item--contacts {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 
     width: 480px;
     margin: 0;
+  }
+
+  .form-block__label--contacts {
+    padding-left: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .form-block__label--contacts span {
+    display: none;
+  }
+
+  .form-block__input--contacts {
+    box-sizing: border-box;
+    width: 315px;
+  }
+
+  .form-block__list--check {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+
+    width: 960px;
+    margin-left: 0;
+  }
+
+  .form-block__item--check {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-block__item--check:nth-child(1) {
+    justify-content: flex-start;
+  }
+
+  .form-block__item--check:nth-last-child(1) {
+    justify-content: flex-end;
+  }
+
+  .form__block__area {
+    width: 960px;
+    font: inherit;
+
+    padding-top: 18px;
+    padding-left: 21px;
+    padding-right: 20px;
   }
 }
