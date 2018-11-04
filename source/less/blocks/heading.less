@@ -18,16 +18,15 @@
 }
 
 .heading__block {
-  width: 275px;
-  margin: auto;
   padding-top: 40px;
+  padding-right: 20px;
   padding-bottom: 31px;
+  padding-left: 20px;
+
   box-sizing: border-box;
 }
 
 .heading__block--poster {
-  width: 255px;
-  margin: auto;
   padding-top: 40px;
   padding-bottom: 31px;
 }
@@ -70,15 +69,13 @@
   }
 
   .heading__block {
-    width: 450px;
-
     padding-top: 73px;
+    padding-right: 60px;
     padding-bottom: 70px;
+    padding-left: 60px;
   }
 
   .heading__block--poster {
-    width: 500px;
-    margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     box-sizing: border-box;
@@ -99,6 +96,10 @@
   }
 
   .heading__title {
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 28px;
 
     font-size: 21px;
@@ -107,6 +108,10 @@
   }
 
   .heading__title--catpion {
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
     line-height: 26px;
     font-weight: 700;
@@ -116,16 +121,27 @@
 
   .heading__description {
     width: 440px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .heading__description--poster {
-    width: 500px;
+    width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .heading {
     width: 1200px;
+  }
+
+  .heading__block {
+    padding-right: 120px;
+    padding-left: 120px;
   }
 
   .heading__image {
@@ -137,10 +153,6 @@
   }
 
   .heading__index {
-    width: 1200px;
-  }
-
-  .heading__index--poster {
     width: 1200px;
   }
 }

@@ -121,6 +121,7 @@
 
 @media (min-width: @desktop-width) {
   .photo-block {
+    position: relative;
     width: 1200px;
     padding: 0;
   }
@@ -134,11 +135,20 @@
   }
 
   .photo-block__sign {
-    margin-top: -80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 400px;
+
+
     padding: 17px 20px 15px 17px;
 
-    background-color: @black;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-block__sign--header {
+    width: 1200px;
   }
 
   .photo-block__description,
