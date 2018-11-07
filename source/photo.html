@@ -42,7 +42,11 @@
       <main class="page-main">
         <header class="page-main__heading heading">
           <div class="heading__index">
-            <img class="heading__image" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Добро пожаловать в Седону">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/pbg-back-tablet@2x.jpg 2x">
+              <img class="heading__image heading__image--poster" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Добро пожаловать в Седону">
+            </picture>
           </div>
           <div class="heading__block">
             <h1 class="heading__title heading__title--catpion">Фото и видео</h1>
@@ -54,7 +58,11 @@
             <ul class="photo__list">
               <li class="photo__item photo-block photo-block--header">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image photo-block__image--header" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                    <img class="photo-block__image photo-block__image--header" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                  </picture>
                 </a>
                 <div class="photo-block__sign photo-block__sign--header">
                   <div class="photo-block__description">
@@ -69,7 +77,11 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img class="photo-block__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -84,7 +96,11 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                    <img class="photo-block__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                  </picture>
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -99,7 +115,11 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="photo-block__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
+                  </picture>
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -120,7 +140,11 @@
           <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__player player">
             <div class="player__image">
-              <img class="player__photo" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Фото дороги в Седону">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="player__photo" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Фото дороги в Седону">
+              </picture>
             </div>
             <div class="player__controls controls">
               <div class="controls__rewind">
