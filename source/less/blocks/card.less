@@ -8,11 +8,23 @@
 }
 
 .card__list--town {
-  padding-top: 40px;
+  position: relative;
+
+  padding-top: 75px;
   padding-bottom: 40px;
 
   color: @white;
   background-color: @blue;
+}
+
+.card__list--bridge {
+  padding-top: 40px;
+}
+
+.card__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .card__title,
@@ -29,20 +41,39 @@
   .title-font();
 }
 
-.card__number {
-  margin-bottom: 16px;
+.card__title br {
+  display: none;
 }
 
-.card__number,
-.card__description {
-
-  margin: 0, auto;
+.card__number {
+  margin: auto;
+  margin-bottom: 16px;
 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 
   text-align: center;
+}
+
+.card__description {
+  width: 268px;
+
+  margin: auto;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.card__description--road {
+  width: 220px;
+}
+
+.card__description--grand {
+  width: 255px;
 }
 
 .card__photo {
@@ -62,8 +93,12 @@
   .card__list {
     width: 256px;
 
-    padding-top: 40px;
+    padding-top: 45px;
     padding-bottom: 45px;
+  }
+
+  .card__triangle {
+    display: none;
   }
 
   .card__list--town {
@@ -99,24 +134,40 @@
 
   .card__photo {
     width: 512px;
+    height: 256px;
   }
 
   .card__list--bridge {
     order: 2;
+  }
+
+  .card__title br {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .card__list {
     width: 400px;
+
+    padding-top: 45px;
+    padding-bottom: 65px;
   }
 
   .card__list--town {
     width: 400px;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 
   .card__photo {
     width: 800px;
+  }
+
+  .card__photo-image {
+    max-width: none;
+    transform: translate(0, -17%);
   }
 
   .card__description {
@@ -124,7 +175,15 @@
     margin: auto;
   }
 
+  .card__description--bridge {
+    width: 217px;
+  }
+
   .card__description--road {
     width: 274px;
+  }
+
+  .card__title br {
+    display: block;
   }
 }
