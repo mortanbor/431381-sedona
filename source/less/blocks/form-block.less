@@ -23,14 +23,6 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.form-block--check {
-  padding-bottom: 40px;
-}
-
-.form-block__item--check {
-  position: relative;
-}
-
 .form-block__list {
   .default-style();
 }
@@ -106,6 +98,7 @@
 .form-block__input--contacts {
   padding-top: 15px;
   padding-bottom: 17px;
+  margin-left: 0;
 }
 
 .form-block__label--radio,
@@ -115,6 +108,10 @@
 
 .form-block__item--contacts {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-bottom: 12px;
 }
 
 .form-block__item--telephone::before {
@@ -186,19 +183,8 @@
   margin-bottom: 9px;
 }
 
-.form-block__item--contacts {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin-bottom: 12px;
-}
-
 .form-block__list > .form-block__item--contacts:nth-last-child(1) {
   margin-bottom: 0;
-}
-
-.form-block__input--contacts {
-  margin-left: 0;
 }
 
 .form-block--contacts {
@@ -220,6 +206,8 @@
 }
 
 .form-block__item--check {
+  position: relative;
+
   padding-left: 77px;
   padding-top: 20px;
   padding-bottom: 34px;
@@ -308,6 +296,7 @@
 
 .form-block--check {
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .form-block__input--check + .form-block__label--check::before {
