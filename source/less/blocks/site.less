@@ -65,11 +65,27 @@
 
   .site__link[href]:hover,
   .site__link[href]:focus {
+    color: @blue;
     background-color: @white;
   }
 
   .site__link[href]:active {
-    color: @black;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: @white;
+  }
+
+  .site__link--active {
+    color: rgb(118, 99, 87);
+  }
+
+  .site__link--active:hover,
+  .site__link--active:focus {
+    color: #604e43;
+    background-color: @white;
+  }
+
+  .site__link--active:active {
+    color: rgba(118, 99, 87, 0.3);
     background-color: @white;
   }
 }
