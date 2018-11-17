@@ -1,4 +1,6 @@
 .video {
+  box-sizing: border-box;
+  width: 100%;
   padding-top: 28px;
   margin-bottom: 37px;
 
@@ -51,5 +53,18 @@
 
     margin: auto;
     margin-bottom: 74px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    padding-top: 68px;
+    margin-bottom: 82px;
+
+    border: none;
+  }
+
+  .video__player {
+    position: relative;
   }
 }

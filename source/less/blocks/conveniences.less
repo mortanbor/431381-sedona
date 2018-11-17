@@ -60,10 +60,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 
     width: 768px;
 
-    padding-top: 0;
+    padding-top: 55px;
     padding-bottom: 60px;
   }
 
@@ -71,22 +72,22 @@
     width: 33.33%;
     box-sizing: border-box;
 
-    padding-top: 160px;
+    padding-top: 0;
     padding-left: 0;
     margin-bottom: 0;
   }
 
   .conveniences__item svg {
-    top: 59px;
-    left: 89px;
+    position: static;
+    top: 0;
+    left: 0;
+
+    align-items: flex-end;
 
     width: auto;
     height: auto;
-  }
 
-  .conveniences__item--gifts svg {
-    top: 55px;
-    left: 92px;
+    margin-bottom: 22px;
   }
 
   .conveniences__title {
@@ -127,16 +128,8 @@
   }
 
   .conveniences__item svg {
-    top: 59px;
-    left: 160px;
-
     width: auto;
     height: auto;
-  }
-
-  .conveniences__item--gifts svg {
-    top: 56px;
-    left: 168px;
   }
 
   .conveniences__description {

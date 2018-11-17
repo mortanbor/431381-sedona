@@ -97,6 +97,7 @@
 
 .form-block__input--contacts {
   padding-top: 15px;
+  padding-right: 65px;
   padding-bottom: 17px;
   margin-left: 0;
 }
@@ -260,9 +261,10 @@
   background-color: #e5e5e5;
 }
 
-.form-block__input:active {
+.form-block__input:focus {
   background-color: @white;
   box-shadow: 0 0 0 4px rgb(229, 229, 229) inset;
+  outline: 0;
 }
 
 .form-block__input--radio + .form-block__label--radio::before {
@@ -494,17 +496,27 @@
   .form-block--radio {
     width: 480px;
 
-    padding-left: 83px;
+    padding-left: 0;
   }
 
   .form-block--introduce {
     width: 480px;
 
-    padding-left: 83px;
+    padding-left: 80px;
+  }
+
+  .form-block__title--introduce {
+    margin-bottom: 57px;
+  }
+
+  .form-block__title--radio {
+    padding-left: 80px;
   }
 
   .form-block__item--radio {
-    padding-left: 0;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 32px;
   }
 
   .form-block--contacts {
@@ -516,7 +528,7 @@
   }
 
   .form-block__title--contacts {
-    margin-bottom: 65px;
+    margin-bottom: 75px;
   }
 
   .form-block__list--contacts {
@@ -547,10 +559,17 @@
   .form-block__input--contacts {
     box-sizing: border-box;
     width: 315px;
+    padding-right: 65px;
+  }
+
+  .form-block--check {
+
+    padding-bottom: 40px;
   }
 
   .form-block__list--check {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
     box-sizing: border-box;
@@ -562,6 +581,8 @@
   .form-block__item--check {
     display: flex;
     justify-content: space-around;
+
+    margin-bottom: 7px;
   }
 
   .form-block__item--check:nth-child(1) {
@@ -572,6 +593,7 @@
     justify-content: flex-end;
   }
 
+
   .form__block__area {
     width: 960px;
     font: inherit;
@@ -579,5 +601,25 @@
     padding-top: 18px;
     padding-left: 21px;
     padding-right: 20px;
+  }
+
+  .form-block__item--telephone::before {
+    top: 0;
+    right: 80px;
+  }
+
+  .form-block__item--telephone::after {
+    top: 21px;
+    right: 100px;
+  }
+
+  .form-block__item--email::before {
+    top: 0;
+    right: 0;
+  }
+
+  .form-block__item--email::after {
+    top: 21px;
+    right: 18px;
   }
 }
