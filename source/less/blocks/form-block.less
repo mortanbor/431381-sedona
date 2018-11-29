@@ -49,11 +49,6 @@
   margin-bottom: 19px;
 }
 
-.form-block__title--radio {
-  margin-bottom: 18px;
-  margin-left: 14px;
-}
-
 .form-block__label {
   display: flex;
   align-items: center;
@@ -192,27 +187,32 @@
   padding-bottom: 26px;
 }
 
+.form-block__title--radio {
+  margin-bottom: 25px;
+  margin-left: 14px;
+}
+
 .form-block__item--radio {
   position: relative;
 
-  padding-left: 77px;
-  padding-top: 20px;
-  padding-bottom: 23px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
 
   .title-font();
   color: @black;
 
   text-transform: none;
+}
+
+.form-block__label--radio {
+  padding-left: 77px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .form-block__item--check {
   position: relative;
 
-  padding-left: 77px;
-  padding-top: 20px;
-  padding-bottom: 34px;
-  margin-bottom: 0;
+  margin-bottom: 22px;
 
   .title-font();
   color: @black;
@@ -220,16 +220,14 @@
   text-transform: none;
 }
 
-.form-block__item--check:nth-last-child(1) {
-  padding-bottom: 0;
+.form-block__label--check {
+  padding-left: 77px;
+  padding-top: 18px;
+  padding-bottom: 14px;
 }
 
 .form-block__list > .form-block__item:nth-last-child(1) {
   margin-bottom: 0;
-}
-
-.form-block__title--check {
-  margin-bottom: 12px;
 }
 
 .form__block__area {
@@ -250,7 +248,7 @@
 }
 
 .form-block--radio {
-  padding-bottom: 21px;
+  padding-bottom: 29px;
 }
 
 .form__block__area::placeholder {
@@ -271,7 +269,7 @@
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
 
   width: 56px;
@@ -286,7 +284,7 @@
   content: "";
 
   position: absolute;
-  top: 23px;
+  top: 17px;
   left: 17px;
 
   width: 22px;
@@ -296,16 +294,20 @@
   border-radius: 50%;
 }
 
+.form-block__title--check {
+  margin-bottom: 15px;
+}
+
 .form-block--check {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 26px;
 }
 
 .form-block__input--check + .form-block__label--check::before {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
 
   width: 56px;
@@ -320,7 +322,7 @@
   content: "";
 
   position: absolute;
-  top: 24px;
+  top: 21px;
   left: 16px;
 
   width: 24px;
@@ -366,9 +368,8 @@
 
   .form-block--radio {
     width: 324px;
-
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 
     order: -1;
   }
@@ -384,14 +385,21 @@
   }
 
   .form-block__item--radio {
-    padding-left: 75px;
-    padding-top: 14px;
-    padding-bottom: 38px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
+  }
+
+  .form-block__title--radio {
+    margin-bottom: 60px;
+  }
+
+  .form-block__label--radio {
+    padding-left: 77px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .form-block--introduce {
@@ -430,9 +438,10 @@
 
   .form-block--check {
     display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    padding: 52px 0 50px 0;
+    padding: 52px 40px 40px 95px;
   }
 
   .form-block__list--check {
@@ -443,13 +452,22 @@
     box-sizing: border-box;
 
     width: 100%;
-    margin-left: 90px;
   }
 
   .form-block__item--check {
-    width: 185px;
-    padding-left: 80px;
-    margin-bottom: 7px;
+    width: 230px;
+    margin-right: 26px;
+    margin-bottom: 30px;
+  }
+
+  .form-block__label--check {
+    padding-left: 77px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+
+  .form-block__list > .form-block__item--check:nth-last-child(1) {
+    margin-bottom: 20px;
   }
 
   .form-block__title--check {
@@ -458,15 +476,7 @@
     text-align: center;
 
     margin: auto;
-    margin-bottom: 37px;
-  }
-
-  .form-block__item--check:nth-last-child(1) {
-    padding-bottom: 34px;
-  }
-
-  .form-block__item--check:nth-last-child(2) {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .form-block--comment {
@@ -490,12 +500,76 @@
     padding-right: 10px;
     margin-bottom: 0;
   }
+
+  .form-block__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .form-block__title--introduce::before,
+  .form-block__title--radio::before {
+    display: none;
+  }
+
+  .form-block__title--contacts::before {
+    top: 12px;
+  }
+
+  .form-block__title--comment::before {
+    top: 14px;
+  }
+
+  .form-block__title--check::before {
+    top: 78px;
+  }
+
+  .form-block__title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .form-block__title--introduce::after {
+    display: none;
+  }
+
+  .form-block__title--radio::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 1px;
+    height: 291px;
+    border-top: none;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .form-block__title--contacts::after {
+    top: 12px;
+  }
+
+  .form-block__title--comment::after {
+    top: 14px;
+  }
+
+  .form-block__title--check::after {
+    top: 78px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form-block--radio {
     width: 480px;
-
+    margin-bottom: 70px;
     padding-left: 0;
   }
 
@@ -509,14 +583,18 @@
     margin-bottom: 57px;
   }
 
+  .form-block__title--comment {
+    margin-bottom: 55px;
+  }
+
   .form-block__title--radio {
     padding-left: 80px;
   }
 
-  .form-block__item--radio {
-    padding-top: 20px;
-    padding-left: 80px;
-    padding-bottom: 32px;
+  .form-block__label--radio {
+    padding-top: 15px;
+    padding-left: 78px;
+    padding-bottom: 15px;
   }
 
   .form-block--contacts {
@@ -563,8 +641,9 @@
   }
 
   .form-block--check {
-
-    padding-bottom: 40px;
+    padding-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form-block__list--check {
@@ -581,8 +660,17 @@
   .form-block__item--check {
     display: flex;
     justify-content: space-around;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
 
-    margin-bottom: 7px;
+  .form-block__item--check:nth-child(3) {
+    margin-right: 40px;
+  }
+
+  .form-block__list > .form-block__item--check:nth-last-child(1) {
+    margin-bottom: 0;
+    margin-right: 0;
   }
 
   .form-block__item--check:nth-child(1) {
@@ -621,5 +709,15 @@
   .form-block__item--email::after {
     top: 21px;
     right: 18px;
+  }
+
+  .form-block__title::before,
+  .form-block__title::after {
+    width: 280px;
+  }
+
+  .form-block__title--comment::before,
+  .form-block__title--comment::after {
+    top: 12px;
   }
 }

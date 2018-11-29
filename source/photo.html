@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <script>
       document.createElement( "picture" );
     </script>
@@ -647,8 +650,7 @@
             </div>
             <div class="player__controls controls">
               <div class="controls__rewind">
-                <div class="controls__scale"></div>
-                <div class="controls__toggle"></div>
+                <input type="range">
               </div>
               <div class="controls__console console">
                 <button class="console__item console__item--repeat" type="button" aria-label="Повтор">
